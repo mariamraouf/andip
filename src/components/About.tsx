@@ -11,7 +11,7 @@ const About = () => {
           <div className="relative">
             <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="dyad-media://media/bold-hummingbird-skid/.dyad/media/74105f13fcca9f2e8b3886555db901a7.png" 
+                src="dyad-media://media/bold-hummingbird-skid/.dyad/media/bb7d317a760444cae06ada0f1301b70b.png" 
                 alt="Andip in the mountains with dogs" 
                 className="w-full h-full object-cover"
               />

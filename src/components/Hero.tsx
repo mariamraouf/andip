@@ -10,7 +10,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: 'url("dyad-media://media/bold-hummingbird-skid/.dyad/media/8d031715d95de2cb4b6ac126dff1a940.png")',
+          backgroundImage: 'url("dyad-media://media/bold-hummingbird-skid/.dyad/media/d9ab7ed18949ad4191af9c0f081e9a1a.png")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

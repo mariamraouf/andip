@@ -4,22 +4,22 @@ import React from 'react';
 
 const galleryImages = [
   {
-    url: "dyad-media://media/bold-hummingbird-skid/.dyad/media/eff50fb4fe78ac2f44af79c211aa2d41.png",
+    url: "dyad-media://media/bold-hummingbird-skid/.dyad/media/9083041f747f5a939168f5aca54f63d5.png",
     title: "Crystal Waterfalls",
     span: "md:col-span-2 md:row-span-2"
   },
   {
-    url: "dyad-media://media/bold-hummingbird-skid/.dyad/media/482df82db5fc78f0539dd714382c2a3a.png",
+    url: "dyad-media://media/bold-hummingbird-skid/.dyad/media/7b640412daf5e630b293a2514d809e91.png",
     title: "Sacred Temples",
     span: "md:col-span-1 md:row-span-1"
   },
   {
-    url: "dyad-media://media/bold-hummingbird-skid/.dyad/media/74105f13fcca9f2e8b3886555db901a7.png",
+    url: "dyad-media://media/bold-hummingbird-skid/.dyad/media/bb7d317a760444cae06ada0f1301b70b.png",
     title: "Mountain Companions",
     span: "md:col-span-1 md:row-span-2"
   },
   {
-    url: "dyad-media://media/bold-hummingbird-skid/.dyad/media/cdc6be60df40b209d5bf877ccc307288.png",
+    url: "dyad-media://media/bold-hummingbird-skid/.dyad/media/6730c12d6f42c755486a683582856ad6.png",
     title: "Glacial Lakes",
     span: "md:col-span-1 md:row-span-1"
   }
