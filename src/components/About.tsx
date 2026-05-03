@@ -2,16 +2,23 @@
 
 import React from 'react';
 import { Instagram, CheckCircle2, Award } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
     <section id="about" className="py-24 px-6 bg-slate-50">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div className="relative">
+          <motion.div 
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="relative"
+          >
             <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="dyad-media://media/bold-hummingbird-skid/.dyad/media/bb7d317a760444cae06ada0f1301b70b.png" 
+                src="dyad-media://media/bold-hummingbird-skid/.dyad/media/fe10e0dbfbbfcd0fed3d1d2e9f4d1430.jpeg" 
                 alt="Andip in the mountains with dogs" 
                 className="w-full h-full object-cover"
               />
@@ -27,9 +34,14 @@ const About = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
             <h2 className="text-orange-600 font-bold tracking-widest uppercase text-sm mb-4">Your Local Guide</h2>
             <h3 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
               Namaste, I'm Andip.
@@ -75,7 +87,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

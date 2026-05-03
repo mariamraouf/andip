@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Clock, Users, Star, ArrowUpRight } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const tourData = [
   {
@@ -10,7 +11,7 @@ const tourData = [
     groupSize: "2-12 People",
     rating: 4.9,
     price: "1,450",
-    image: "dyad-media://media/bold-hummingbird-skid/.dyad/media/6730c12d6f42c755486a683582856ad6.png",
+    image: "dyad-media://media/bold-hummingbird-skid/.dyad/media/c4864c7f060f32b9d860d79f9f167409.jpeg",
     tag: "Most Popular"
   },
   {
@@ -19,7 +20,7 @@ const tourData = [
     groupSize: "1-10 People",
     rating: 4.8,
     price: "1,200",
-    image: "dyad-media://media/bold-hummingbird-skid/.dyad/media/9083041f747f5a939168f5aca54f63d5.png",
+    image: "dyad-media://media/bold-hummingbird-skid/.dyad/media/87783837f4a2206cce855298291c1662.jpeg",
     tag: "Best Views"
   },
   {
@@ -28,7 +29,7 @@ const tourData = [
     groupSize: "Any",
     rating: 5.0,
     price: "350",
-    image: "dyad-media://media/bold-hummingbird-skid/.dyad/media/7b640412daf5e630b293a2514d809e91.png",
+    image: "dyad-media://media/bold-hummingbird-skid/.dyad/media/5f053e0c65723c7d0a9aaf5507913676.jpeg",
     tag: "Spiritual"
   }
 ];
@@ -38,18 +39,35 @@ const Tours = () => {
     <section id="tours" className="py-24 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
-          <div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
             <h2 className="text-orange-600 font-bold tracking-widest uppercase text-sm mb-4">Adventure Awaits</h2>
             <h3 className="text-4xl md:text-5xl font-bold text-slate-900">Popular Expeditions</h3>
-          </div>
-          <p className="text-slate-500 max-w-md">
+          </motion.div>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="text-slate-500 max-w-md"
+          >
             Carefully curated experiences designed to show you the very best of Nepal's nature and heritage.
-          </p>
+          </motion.p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {tourData.map((tour, index) => (
-            <div key={index} className="group bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300">
+            <motion.div 
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="group bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300"
+            >
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={tour.image} 
@@ -94,7 +112,7 @@ const Tours = () => {
                   </button>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

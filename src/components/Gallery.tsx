@@ -1,25 +1,26 @@
 "use client";
 
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const galleryImages = [
   {
-    url: "dyad-media://media/bold-hummingbird-skid/.dyad/media/9083041f747f5a939168f5aca54f63d5.png",
+    url: "dyad-media://media/bold-hummingbird-skid/.dyad/media/87783837f4a2206cce855298291c1662.jpeg",
     title: "Crystal Waterfalls",
     span: "md:col-span-2 md:row-span-2"
   },
   {
-    url: "dyad-media://media/bold-hummingbird-skid/.dyad/media/7b640412daf5e630b293a2514d809e91.png",
+    url: "dyad-media://media/bold-hummingbird-skid/.dyad/media/5f053e0c65723c7d0a9aaf5507913676.jpeg",
     title: "Sacred Temples",
     span: "md:col-span-1 md:row-span-1"
   },
   {
-    url: "dyad-media://media/bold-hummingbird-skid/.dyad/media/bb7d317a760444cae06ada0f1301b70b.png",
+    url: "dyad-media://media/bold-hummingbird-skid/.dyad/media/fe10e0dbfbbfcd0fed3d1d2e9f4d1430.jpeg",
     title: "Mountain Companions",
     span: "md:col-span-1 md:row-span-2"
   },
   {
-    url: "dyad-media://media/bold-hummingbird-skid/.dyad/media/6730c12d6f42c755486a683582856ad6.png",
+    url: "dyad-media://media/bold-hummingbird-skid/.dyad/media/c4864c7f060f32b9d860d79f9f167409.jpeg",
     title: "Glacial Lakes",
     span: "md:col-span-1 md:row-span-1"
   }
@@ -30,17 +31,27 @@ const Gallery = () => {
     <section id="gallery" className="py-24 px-6 bg-slate-900 text-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-orange-500 font-bold tracking-widest uppercase text-sm mb-4">Visual Journey</h2>
-          <h3 className="text-4xl md:text-5xl font-bold mb-6">Moments from the Trail</h3>
-          <p className="text-slate-400 max-w-2xl mx-auto">
-            A glimpse into the breathtaking landscapes and spiritual encounters we experience on our tours.
-          </p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-orange-500 font-bold tracking-widest uppercase text-sm mb-4">Visual Journey</h2>
+            <h3 className="text-4xl md:text-5xl font-bold mb-6">Moments from the Trail</h3>
+            <p className="text-slate-400 max-w-2xl mx-auto">
+              A glimpse into the breathtaking landscapes and spiritual encounters we experience on our tours.
+            </p>
+          </motion.div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[250px]">
           {galleryImages.map((img, index) => (
-            <div 
+            <motion.div 
               key={index} 
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
               className={`relative group overflow-hidden rounded-3xl ${img.span}`}
             >
               <img 
@@ -51,7 +62,7 @@ const Gallery = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
                 <p className="text-xl font-bold">{img.title}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
         
