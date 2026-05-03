@@ -18,8 +18,8 @@ const About = () => {
           >
             <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="dyad-media://media/bold-hummingbird-skid/.dyad/media/fe10e0dbfbbfcd0fed3d1d2e9f4d1430.jpeg" 
-                alt="Andip in the mountains with dogs" 
+                src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&q=80&w=1000" 
+                alt="Trekking Guide in Nepal" 
                 className="w-full h-full object-cover"
               />
             </div>

@@ -10,7 +10,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="dyad-media://media/bold-hummingbird-skid/.dyad/media/495831ac8b26e795d1fef9031c5d9d18.jpeg" 
+          src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&q=80&w=2000" 
           alt="Himalayan Peaks"
           className="w-full h-full object-cover"
         />

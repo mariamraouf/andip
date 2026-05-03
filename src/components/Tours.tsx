@@ -11,7 +11,7 @@ const tourData = [
     groupSize: "2-12 People",
     rating: 4.9,
     price: "1,450",
-    image: "dyad-media://media/bold-hummingbird-skid/.dyad/media/c4864c7f060f32b9d860d79f9f167409.jpeg",
+    image: "https://images.unsplash.com/photo-1585054773499-5fc8823a786f?auto=format&fit=crop&q=80&w=1000",
     tag: "Most Popular"
   },
   {
@@ -20,7 +20,7 @@ const tourData = [
     groupSize: "1-10 People",
     rating: 4.8,
     price: "1,200",
-    image: "dyad-media://media/bold-hummingbird-skid/.dyad/media/87783837f4a2206cce855298291c1662.jpeg",
+    image: "https://images.unsplash.com/photo-1526718583451-e88ebf18734e?auto=format&fit=crop&q=80&w=1000",
     tag: "Best Views"
   },
   {
@@ -29,7 +29,7 @@ const tourData = [
     groupSize: "Any",
     rating: 5.0,
     price: "350",
-    image: "dyad-media://media/bold-hummingbird-skid/.dyad/media/5f053e0c65723c7d0a9aaf5507913676.jpeg",
+    image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&q=80&w=1000",
     tag: "Spiritual"
   }
 ];

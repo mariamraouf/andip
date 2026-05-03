@@ -5,22 +5,22 @@ import { motion } from 'framer-motion';
 
 const galleryImages = [
   {
-    url: "dyad-media://media/bold-hummingbird-skid/.dyad/media/87783837f4a2206cce855298291c1662.jpeg",
-    title: "Crystal Waterfalls",
+    url: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&q=80&w=1000",
+    title: "Himalayan Peaks",
     span: "md:col-span-2 md:row-span-2"
   },
   {
-    url: "dyad-media://media/bold-hummingbird-skid/.dyad/media/5f053e0c65723c7d0a9aaf5507913676.jpeg",
+    url: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&q=80&w=1000",
     title: "Sacred Temples",
     span: "md:col-span-1 md:row-span-1"
   },
   {
-    url: "dyad-media://media/bold-hummingbird-skid/.dyad/media/fe10e0dbfbbfcd0fed3d1d2e9f4d1430.jpeg",
-    title: "Mountain Companions",
+    url: "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&q=80&w=1000",
+    title: "Mountain Trails",
     span: "md:col-span-1 md:row-span-2"
   },
   {
-    url: "dyad-media://media/bold-hummingbird-skid/.dyad/media/c4864c7f060f32b9d860d79f9f167409.jpeg",
+    url: "https://images.unsplash.com/photo-1526718583451-e88ebf18734e?auto=format&fit=crop&q=80&w=1000",
     title: "Glacial Lakes",
     span: "md:col-span-1 md:row-span-1"
   }
