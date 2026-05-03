@@ -7,16 +7,14 @@ import { motion } from 'framer-motion';
 const Hero = () => {
   return (
     <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
-      {/* Background Image Overlay */}
-      <div 
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: 'url("dyad-media://media/bold-hummingbird-skid/.dyad/media/495831ac8b26e795d1fef9031c5d9d18.jpeg")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        <div className="absolute inset-0 bg-black/30" />
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="dyad-media://media/bold-hummingbird-skid/.dyad/media/495831ac8b26e795d1fef9031c5d9d18.jpeg" 
+          alt="Himalayan Peaks"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       <div className="relative z-10 text-center px-6 max-w-4xl">
