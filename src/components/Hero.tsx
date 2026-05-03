@@ -3,6 +3,7 @@
 import React from 'react';
 import { ArrowRight, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
+import heroImg from '@/assets/hero-mountains.jpg';
 
 const Hero = () => {
   return (
@@ -10,7 +11,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&q=80&w=2000" 
+          src={heroImg} 
           alt="Himalayan Peaks"
           className="w-full h-full object-cover"
         />

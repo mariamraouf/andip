@@ -2,25 +2,29 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import waterfallImg from '@/assets/waterfall.jpg';
+import lakeImg from '@/assets/lake-trek.jpg';
+import templeImg from '@/assets/temple.jpg';
+import heroImg from '@/assets/hero-mountains.jpg';
 
 const galleryImages = [
   {
-    url: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&q=80&w=1000",
+    url: heroImg,
     title: "Himalayan Peaks",
     span: "md:col-span-2 md:row-span-2"
   },
   {
-    url: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&q=80&w=1000",
+    url: templeImg,
     title: "Sacred Temples",
     span: "md:col-span-1 md:row-span-1"
   },
   {
-    url: "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&q=80&w=1000",
+    url: waterfallImg,
     title: "Mountain Trails",
     span: "md:col-span-1 md:row-span-2"
   },
   {
-    url: "https://images.unsplash.com/photo-1526718583451-e88ebf18734e?auto=format&fit=crop&q=80&w=1000",
+    url: lakeImg,
     title: "Glacial Lakes",
     span: "md:col-span-1 md:row-span-1"
   }

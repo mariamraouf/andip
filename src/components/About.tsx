@@ -3,6 +3,7 @@
 import React from 'react';
 import { Instagram, CheckCircle2, Award } from 'lucide-react';
 import { motion } from 'framer-motion';
+import aboutImg from '@/assets/andip-dogs.jpg';
 
 const About = () => {
   return (
@@ -18,8 +19,8 @@ const About = () => {
           >
             <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&q=80&w=1000" 
-                alt="Trekking Guide in Nepal" 
+                src={aboutImg} 
+                alt="Andip in the mountains with dogs" 
                 className="w-full h-full object-cover"
               />
             </div>
