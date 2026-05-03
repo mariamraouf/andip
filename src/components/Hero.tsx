@@ -10,12 +10,12 @@ const Hero = () => {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=2071&auto=format&fit=crop")',
+          backgroundImage: 'url("dyad-media://media/bold-hummingbird-skid/.dyad/media/8d031715d95de2cb4b6ac126dff1a940.png")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/30" />
       </div>
 
       <div className="relative z-10 text-center px-6 max-w-4xl">
@@ -24,11 +24,11 @@ const Hero = () => {
           <span>Based in Kathmandu, Nepal</span>
         </div>
         
-        <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight leading-tight">
+        <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight leading-tight drop-shadow-lg">
           Experience the <span className="text-orange-500">Himalayas</span> with Andip
         </h1>
         
-        <p className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed drop-shadow-md">
           From the peaks of Everest to the spiritual temples of Kathmandu. 
           Discover the hidden gems of Nepal with a local expert who knows every trail.
         </p>
@@ -36,7 +36,7 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a 
             href="#tours" 
-            className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-full font-bold text-lg flex items-center justify-center gap-2 transition-all group"
+            className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-full font-bold text-lg flex items-center justify-center gap-2 transition-all group shadow-xl shadow-orange-900/20"
           >
             Explore Tours
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { Instagram, CheckCircle2, Award, Users } from 'lucide-react';
+import { Instagram, CheckCircle2, Award } from 'lucide-react';
 
 const About = () => {
   return (
@@ -11,8 +11,8 @@ const About = () => {
           <div className="relative">
             <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1605640840605-14ac1855827b?q=80&w=1974&auto=format&fit=crop" 
-                alt="Andip in the mountains" 
+                src="dyad-media://media/bold-hummingbird-skid/.dyad/media/74105f13fcca9f2e8b3886555db901a7.png" 
+                alt="Andip in the mountains with dogs" 
                 className="w-full h-full object-cover"
               />
             </div>
@@ -57,7 +57,7 @@ const About = () => {
                 href="https://instagram.com/__andip__" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3 rounded-xl font-bold hover:opacity-90 transition-all"
+                className="flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3 rounded-xl font-bold hover:opacity-90 transition-all shadow-lg shadow-pink-200"
               >
                 <Instagram className="w-5 h-5" />
                 @__andip__
